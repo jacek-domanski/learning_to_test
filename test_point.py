@@ -33,5 +33,19 @@ class TestPoint:
         p2 = point.Point(1, 3)
         assert not p1 == p2
 
+    def test_not_equal(self):
+        p1 = point.Point(1, 2)
+        p2 = point.Point(2, 1)
+        assert p1 != p2
+
+        p2 = point.Point(1, 1)
+        assert p1 != p2
+
+        p2 = point.Point(2, 2)
+        assert p1 != p2
+
+        p2 = point.Point(1, 2)
+        assert not p1 != p2
+
 
 
