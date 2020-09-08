@@ -19,3 +19,19 @@ class TestPoint:
         assert p1-p2 == 0
 
         assert p1-p1 == 0
+
+    def test_equal(self):
+        p1 = point.Point(1, 2)
+        p2 = point.Point(1, 2)
+        assert p1 == p2
+
+        assert p1 == p1
+
+        p2 = point.Point(2, 2)
+        assert not p1 == p2
+
+        p2 = point.Point(1, 3)
+        assert not p1 == p2
+
+
+
